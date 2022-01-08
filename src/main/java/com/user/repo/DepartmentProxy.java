@@ -6,7 +6,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.user.vo.Department;
 
-@FeignClient(name="DEPARTMENT-SERVICE")
+//@FeignClient(name="DEPARTMENT-SERVICE")
+@FeignClient(name="https://depart-service.herokuapp.com")
 public interface DepartmentProxy {
 	
 	@GetMapping("/departments/{id}")
